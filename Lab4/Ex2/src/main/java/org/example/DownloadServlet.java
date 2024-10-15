@@ -17,9 +17,9 @@ public class DownloadServlet extends HttpServlet {
                 response.setContentType("application/zip");
                 response.setHeader("Content-disposition", "attachment; filename=data.zip");
 
-                String relativePath = "/data/data.zip";
-                String filePath = getServletContext().getRealPath(relativePath);
-                FileInputStream fin = new FileInputStream(filePath);
+//                String relativePath = "data/data.zip";
+//                String filePath = getServletContext().getRealPath(relativePath);
+                InputStream fin = getClass().getClassLoader().getResourceAsStream("data/data.zip");
                 ServletOutputStream out = response.getOutputStream();
                 BufferedOutputStream bout = new BufferedOutputStream(out);
                 BufferedInputStream bin = new BufferedInputStream(fin);
@@ -36,9 +36,9 @@ public class DownloadServlet extends HttpServlet {
                 response.setContentType("audio/mpeg");
                 response.setHeader("Content-disposition", "attachment; filename=music.mp3");
 
-                String relativePath = "/data/music.mp3";
-                String filePath = getServletContext().getRealPath(relativePath);
-                FileInputStream fin = new FileInputStream(filePath);
+//                String relativePath = "/data/music.mp3";
+//                String filePath = getServletContext().getRealPath(relativePath);
+                InputStream fin = getClass().getClassLoader().getResourceAsStream("data/music.mp3");
                 ServletOutputStream out = response.getOutputStream();
                 BufferedOutputStream bout = new BufferedOutputStream(out);
                 BufferedInputStream bin = new BufferedInputStream(fin);

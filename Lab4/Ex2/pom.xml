@@ -23,6 +23,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>Ex2</finalName>
+    <finalName>ROOT</finalName>
   </build>
 </project>

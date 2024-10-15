@@ -17,10 +17,10 @@ public class ImageServlet1 extends HttpServlet {
 
         ServletOutputStream out = response.getOutputStream();
 
-        String relativePath = "/images/GOAT.jpg";
-        String filePath = getServletContext().getRealPath(relativePath);
+//        String relativePath = "images/GOAT.jpg";
+//        String filePath = getServletContext().getRealPath(relativePath);
 
-        FileInputStream fin = new FileInputStream(filePath);
+        InputStream fin = getClass().getClassLoader().getResourceAsStream("images/GOAT.jpg");
         BufferedInputStream bin = new BufferedInputStream(fin);
         BufferedOutputStream bout = new BufferedOutputStream(out);
 

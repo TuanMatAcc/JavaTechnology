@@ -14,10 +14,10 @@ public class ImageServlet2 extends HttpServlet {
         response.setContentType("image/jpg");
         response.setHeader("Content-disposition", "attachment; filename=GOAT.jpg");
 
-        String relativePath = "/images/GOAT.jpg";
-        String filePath = getServletContext().getRealPath(relativePath);
+//        String relativePath = "images/GOAT.jpg";
+//        String filePath = getServletContext().getRealPath(relativePath);
 
-        FileInputStream fin = new FileInputStream(filePath);
+        InputStream fin = getClass().getClassLoader().getResourceAsStream("images/GOAT.jpg");
         ServletOutputStream out = response.getOutputStream();
         BufferedOutputStream bout = new BufferedOutputStream(out);
         BufferedInputStream bin = new BufferedInputStream(fin);
