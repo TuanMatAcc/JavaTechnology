@@ -7,12 +7,12 @@
   <display-name>Login</display-name>
 
   <servlet>
-    <servlet-name>LoginServlet</servlet-name>
+    <servlet-name>Loginervlet</servlet-name>
     <servlet-class>org.example.LoginServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
+    <servlet-name>Loginervlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
 
