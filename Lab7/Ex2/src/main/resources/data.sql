@@ -1,0 +1,1 @@
+insert into Student(Id, Name, Age, Email, Ielts_Score) VALUES(4, 'Felix', 25, 'f@gmail.com', 2.5);
