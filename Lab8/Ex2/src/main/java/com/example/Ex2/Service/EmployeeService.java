@@ -1,4 +1,4 @@
-package com.example.Ex2.Controller;
+package com.example.Ex2.Service;
 
 import com.example.Ex2.Model.Employee;
 
@@ -9,4 +9,5 @@ public interface EmployeeService {
     public List<Employee> findAll();
     public Employee update(Integer employeeId, Employee updatedEmployee);
     public void delete(Integer employeeId);
+    public Employee findById(Integer id);
 }

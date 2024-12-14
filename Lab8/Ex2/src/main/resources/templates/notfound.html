@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .not-found {
+            text-align: center;
+            background: #ffffff;
+            padding: 40px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .not-found h1 {
+            font-size: 96px;
+            margin: 0;
+            color: #ff6b6b;
+        }
+
+        .not-found p {
+            font-size: 18px;
+            color: #555555;
+            margin: 10px 0 20px;
+        }
+
+        .not-found .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            color: #ffffff;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .not-found .btn:hover {
+            background-color: #d94545;
+        }
+    </style>
+</head>
+<body>
+<div class="not-found">
+    <h1>404</h1>
+    <p>Oops! The employee page you’re looking for doesn’t exist.</p>
+    <a href="/employees" class="btn">Back to Employees</a>
+</div>
+</body>
+</html>

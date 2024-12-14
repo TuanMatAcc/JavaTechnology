@@ -1,4 +1,4 @@
-package com.example.Ex2.Controller;
+package com.example.Ex2.Repository;
 
 import com.example.Ex2.Model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,7 +1,6 @@
 package com.example.Ex2;
 
-import com.example.Ex2.Controller.EmployeeServiceImpl;
-import com.example.Ex2.Model.Employee;
+import com.example.Ex2.Service.EmployeeServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
